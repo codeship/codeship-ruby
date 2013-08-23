@@ -2,6 +2,9 @@
 
 interact with Codeship.
 
+![Build Status](https://www.codeship.io/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
