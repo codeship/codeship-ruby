@@ -31,6 +31,17 @@ Or install it yourself as:
     project_status = Codeship::Status.new "my_project_uuid", branch: "development"
     project_status.status #=> :error
 
+### Get a list of your available projects
+
+    projects = Codeship::Projects.new "my_api_key"
+    projects.list #=> [{"id"=>1, "builds"=>[], "repository_name"=>"abcd/repo-name"}, {"id"=>2, "builds"=>[], "repository_name"=>"abcd/another-repo-name"}]
+
+### Get a single project
+
+    projects = Codeship::Projects.new "my_api_key"
+    projects.project 1 #=> {"id"=>1, "builds"=>[], "repository_name"=>"abcd/repo-name"}
+
+
 ### States
 
 :branchnotfound, :error, :ignored, :projectnotfound, :success, :testing, :waiting
