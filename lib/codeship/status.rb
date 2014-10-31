@@ -1,7 +1,10 @@
-require 'net/http'
+require "codeship/request"
 
 module Codeship
   class Status
+
+    include Request
+
     STATES = [:branchnotfound, :error, :ignored, :projectnotfound,
               :success, :testing, :waiting]
 
@@ -30,10 +33,5 @@ module Codeship
       url
     end
 
-    def http_request
-      http = Net::HTTP.new "www.codeship.io", 443
-      http.use_ssl = true
-      http
-    end
   end
 end
