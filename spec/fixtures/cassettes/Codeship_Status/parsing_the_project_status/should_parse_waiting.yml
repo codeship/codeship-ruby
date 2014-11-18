@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: head
-    uri: https://www.codeship.io/projects/waiting/status
+    uri: https://codeship.com/projects/waiting/status
     body:
       encoding: US-ASCII
       string: ''

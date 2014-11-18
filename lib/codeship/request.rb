@@ -4,7 +4,7 @@ module Codeship
   module Request
 
     def http_request
-      http = Net::HTTP.new "www.codeship.io", 443
+      http = Net::HTTP.new "codeship.com", 443
       http.use_ssl = true
       http
     end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: head
-    uri: https://www.codeship.io/projects/projectnotfound/status
+    uri: https://codeship.com/projects/projectnotfound/status
     body:
       encoding: US-ASCII
       string: ''
