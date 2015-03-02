@@ -44,7 +44,7 @@ Or install it yourself as:
 
 ### States
 
-:branchnotfound, :error, :ignored, :projectnotfound, :success, :testing, :waiting
+:branchnotfound, :error, :ignored, :projectnotfound, :success, :testing, :waiting, stopped, :infrastructure_failure
 
 ## Contributing
 

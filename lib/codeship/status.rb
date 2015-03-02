@@ -6,7 +6,7 @@ module Codeship
     include Request
 
     STATES = [:branchnotfound, :error, :ignored, :projectnotfound,
-              :success, :testing, :waiting]
+              :success, :testing, :waiting, :stopped, :infrastructure_failure]
 
     def initialize uuid, options = {}
       @uuid = uuid
