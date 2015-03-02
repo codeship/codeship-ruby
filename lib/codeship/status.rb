@@ -8,7 +8,7 @@ module Codeship
     STATES = [:branchnotfound, :error, :ignored, :projectnotfound,
               :success, :testing, :waiting, :stopped, :infrastructure_failure]
 
-    def initialize uuid, options = {}
+    def initialize(uuid, options = {})
       @uuid = uuid
       @branch = options.delete(:branch)
     end
@@ -24,7 +24,7 @@ module Codeship
     end
 
     def head
-      @head ||= http_request.head project_url
+      @head ||= http_request.head(project_url)
     end
 
     def project_url
