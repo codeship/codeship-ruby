@@ -56,7 +56,7 @@ Or install it yourself as:
 
 ## Disclaimer
 
-We cannot garantuee any compatibilty with upcoming versions of this Gem.
+We cannot guarantee any compatibilty with upcoming versions of this Gem.
 
 
 ## License
