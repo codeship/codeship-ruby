@@ -6,7 +6,7 @@ RSpec.describe Codeship::Status do
       Codeship::Status::STATES.each do |state|
         it "should parse #{state}" do
 
-          stub_request(:head, "https://codeship.com/projects/#{state}/status").
+          stub_request(:head, "https://app.codeship.com/projects/#{state}/status").
                    with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
                    to_return(status: 200, body: "", headers: {'Content-Disposition' => "inline; filename=\"status_#{state}.png\""})
 
@@ -20,7 +20,7 @@ RSpec.describe Codeship::Status do
       Codeship::Status::STATES.each do |state|
         it "should parse #{state}" do
 
-          stub_request(:head, "https://codeship.com/projects/#{state}/status").
+          stub_request(:head, "https://app.codeship.com/projects/#{state}/status").
                    with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
                    to_return(status: 200, body: "", headers: {'Content-Disposition' => "inline; filename=\"status_#{state}.gif\""})
 
@@ -35,7 +35,7 @@ RSpec.describe Codeship::Status do
     context 'of a project with completed build' do
       Codeship::Status::STATES.each do |state|
         it "should parse #{state}" do
-          stub_request(:head, "https://codeship.com/projects/#{state}/status?branch=master").
+          stub_request(:head, "https://app.codeship.com/projects/#{state}/status?branch=master").
                    with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
                    to_return(status: 200, body: "", headers: {'Content-Disposition' => "inline; filename=\"status_#{state}.png\""})
 
@@ -48,7 +48,7 @@ RSpec.describe Codeship::Status do
     context 'of a project with active build' do
       Codeship::Status::STATES.each do |state|
         it "should parse #{state}" do
-          stub_request(:head, "https://codeship.com/projects/#{state}/status?branch=master").
+          stub_request(:head, "https://app.codeship.com/projects/#{state}/status?branch=master").
                    with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
                    to_return(status: 200, body: "", headers: {'Content-Disposition' => "inline; filename=\"status_#{state}.gif\""})
 
