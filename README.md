@@ -1,13 +1,12 @@
 # Codeship
 
-interact with Codeship.
+Interact with Codeship.
 
-![Build Status](https://www.codeship.io/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
-
+![Codeship Status for codeship/codeship-ruby](https://app.codeship.com/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
 
 ## Contributing
 
-see [CONTRIBUTING.md][contributing]
+See [CONTRIBUTING.md][contributing]
 
 [contributing]: https://github.com/codeship/codeship-ruby/blob/master/CONTRIBUTING.md
 
