@@ -3,6 +3,7 @@
 Interact with Codeship.
 
 ![Codeship Status for codeship/codeship-ruby](https://app.codeship.com/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
+[![Gem Version](https://badge.fury.io/rb/codeship.svg)](https://badge.fury.io/rb/codeship)
 
 ## Contributing
 
@@ -50,7 +51,7 @@ Or install it yourself as:
 
 ### States
 
-:branchnotfound, :error, :ignored, :projectnotfound, :success, :testing, :waiting, stopped, :infrastructure_failure
+:branchnotfound, :error, :ignored, :projectnotfound, :success, :testing, :waiting, :stopped, :infrastructure_failure
 
 ## Disclaimer
 
@@ -59,7 +60,7 @@ We cannot guarantee any compatibilty with upcoming versions of this Gem.
 
 ## License
 
-Copyright (c) 2011 Benjamin Fritsch, Codeship.
+Copyright (c) 2017 Codeship.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
