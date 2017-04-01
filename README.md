@@ -3,6 +3,7 @@
 Interact with Codeship.
 
 ![Codeship Status for codeship/codeship-ruby](https://app.codeship.com/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
+[![Gem Version](https://badge.fury.io/rb/codeship.svg)](https://badge.fury.io/rb/codeship)
 
 ## Contributing
 
