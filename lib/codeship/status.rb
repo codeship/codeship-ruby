@@ -14,7 +14,7 @@ module Codeship
     end
 
     def status
-      image.scan(/status_(.*).(png|gif)/).flatten.first.to_sym
+      image.scan(/status_(.*).(png|gif|svg)/).flatten.first.to_sym
     end
 
     private
