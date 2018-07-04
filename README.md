@@ -1,5 +1,7 @@
 # Codeship
 
+**⚠️⚠️⚠️** This gem only supports v1 of Codeship's API which is [deprecated as of July 1st 2018](https://apidocs.codeship.com/v1/introduction/limitations). **⚠️⚠️⚠️**
+
 Interact with Codeship.
 
 ![Codeship Status for codeship/codeship-ruby](https://app.codeship.com/projects/e8bf3890-ee53-0130-957a-52ea4b2c7608/status)
